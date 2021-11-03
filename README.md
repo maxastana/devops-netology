@@ -1,6 +1,8 @@
 # devops-netology
 1. Test
 2. Test2
+3. Среда
+4. Проверка
 Исключить все файлы в поддкаталоге .terraform
 */.terraform/
 
