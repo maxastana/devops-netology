@@ -15,6 +15,7 @@ config.vm.provider "virtualbox" do |vb|
    vb.memory = "2048"
    
 end
+
 -------------------------------------------
 ![image](https://user-images.githubusercontent.com/65549218/141828120-c2326034-93a5-4652-baf6-a01eba77b6a3.png)
 
