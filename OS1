@@ -26,6 +26,7 @@ Cистемный вызов команды CD -> chdir("/tmp")
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Ответ:
 
+openat(AT_FDCWD, "/usr/share/misc/magic.mgc", O_RDONLY) = 3
 
 stat("/home/vagrant/.magic.mgc", 0x7ffe4b684780) = -1 ENOENT (No such file or directory)
 stat("/home/vagrant/.magic", 0x7ffe4b684780) = -1 ENOENT (No such file or directory)
