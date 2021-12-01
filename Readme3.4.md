@@ -5,5 +5,7 @@
 
 ![image](https://user-images.githubusercontent.com/65549218/144243329-d216175c-9913-4453-810b-64ec3eadef56.png)
 
+Проверка службы
+Рестарт, статус, стоп, старт, статус
 ![image](https://user-images.githubusercontent.com/65549218/144244409-3ccc6cf0-df81-4a54-ac4a-966ed04e2a10.png)
 
