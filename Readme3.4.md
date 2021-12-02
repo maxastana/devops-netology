@@ -16,7 +16,7 @@
 
 Ответ:
 
-						CPU
+				CPU
 	node_cpu_seconds_total{cpu="0",mode="idle"} 18223.66
 	node_cpu_seconds_total{cpu="0",mode="system"} 6.65
 	node_cpu_seconds_total{cpu="0",mode="user"} 10.05
@@ -24,20 +24,29 @@
 	node_cpu_seconds_total{cpu="1",mode="system"} 5.27
 	node_cpu_seconds_total{cpu="1",mode="user"} 8.57
 	
-						Memory
+				Memory
 	node_memory_MemAvailable_bytes 
-    node_memory_MemFree_bytes
+        node_memory_MemFree_bytes
 	
-						Disk		
+				Disk		
 	node_disk_io_time_seconds_total{device="sda"} 46.936
 	node_disk_read_bytes_total{device="sda"} 2.41414144e+08
 	node_disk_read_time_seconds_total{device="sda"} 21.113
 	node_disk_write_time_seconds_total{device="sda"} 117.513
 	
-						Network
+				Network
 	node_network_receive_errs_total{device="enp0s3"} 0
 	node_network_receive_bytes_total{device="enp0s3"} 9.5060737e+07
 	node_network_transmit_bytes_total{device="enp0s3"} 6.065389e+06
 	node_network_transmit_errs_total
+_________________________________________________________________________________________________________________________________________________________________________________
 	
-	
+Задача 3
+
+Установите в свою виртуальную машину Netdata. Воспользуйтесь готовыми пакетами для установки (sudo apt install -y netdata). После успешной установки:
+в конфигурационном файле /etc/netdata/netdata.conf в секции [web] замените значение с localhost на bind to = 0.0.0.0,
+добавьте в Vagrantfile проброс порта Netdata на свой локальный компьютер и сделайте vagrant reload:
+config.vm.network "forwarded_port", guest: 19999, host: 19999
+После успешной перезагрузки в браузере на своем ПК (не в виртуальной машине) вы должны суметь зайти на localhost:19999. Ознакомьтесь с метриками, которые по умолчанию собираются Netdata и с комментариями, которые даны к этим метрикам.
+
+Ответ:
