@@ -138,6 +138,14 @@ Linux
 
 ![image](https://user-images.githubusercontent.com/65549218/146250353-0bed9602-17ad-43a5-8e90-030b7931a827.png)
 
+Очистка ARP-кэша в Windows
+netsh interface ip delete arpcache
+
+Очистка ARP-кэша в Linux
+ip link set arp off dev eth0 ; ip link set arp on dev eth0
+
+Удаляем один адрес из таблицы: 
+ARP -d inet_addr
 
 
 _________________________________________________________________________________________________________________________________________________________________________________
