@@ -4,9 +4,13 @@
 - предусмотрите возможность добавления опций к запускаемому процессу через внешний файл (посмотрите, например, на systemctl cat cron),
 - удостоверьтесь, что с помощью systemctl процесс корректно стартует, завершается, а после перезагрузки автоматически поднимается.
 
-![image](https://user-images.githubusercontent.com/65549218/147329507-a60f1965-cba1-4563-8314-b6e55e31245c.png)
+Ответ:
 
-![image](https://user-images.githubusercontent.com/65549218/144737448-5fed59ef-1b48-4659-b6b5-a7ed1fbfd0be.png)
+	Можно указать через внешний файл, например создать /etc/node_exporter/web.yml
+
+	И указать ExecStart=/usr/local/bin/node_exporter --web.config=/etc/node_exporter/web.yml
+
+![image](https://user-images.githubusercontent.com/65549218/148900588-fb676e34-4ae3-4763-abf2-2e1d99cafcb9.png)
 
 ![image](https://user-images.githubusercontent.com/65549218/144243329-d216175c-9913-4453-810b-64ec3eadef56.png)
 
